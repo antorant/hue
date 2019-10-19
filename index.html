@@ -1,105 +1,47 @@
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
 <style>
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-family: "Overpass Mono", monospace;
-  font-size: 24px;
+* {
   margin: 0;
+  padding: 0;
 }
 
-p {
-  max-width: 24em;
+:root {
+  --unit: calc(100vw / 11);
 }
 
-.cover {
-  background-image: url("img/bg-cover.jpg");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+body {
+  /* margin: var(--unit); */
 }
 
-.cover__logo {
-  margin: 48px;
+.tile {
+  float: left;
+  width: calc(var(--unit) * 4);
+  height: calc(var(--unit) * 4);
+  margin: 0 0 var(--unit) var(--unit);
+  background-size: 100%;
 }
 
-.cover__logo polygon {
-  fill: #1d1d1d;
+@media screen and (max-width: 1024px) {
+  .tile {
+    height: 100vw;
+    margin: 0;
+    width: 100vw;
+  }
 }
 
-p {
-  margin: 48px 24px;
-}
-
-.long-logo__wrapper {
-  height: 336px;
-  position: relative;
-  width: 100%;
-}
-
-.long-logo__image {
-  position: absolute;
-}
-
-.cards__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cards__image {
-  height: 320px;
-  margin: 24px;
-  width: 320px;
-}
 </style>
   </head>
   <body>
-    <div class="cover">
-      <svg class="cover__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="336px" height="336px" viewBox="0 0 336 336" enable-background="new 0 0 336 336" xml:space="preserve">
-      <polygon points="244,148.001 184,148.001 184,120.001 176,124.001 176,148.001 120,148.001 120,56 112,56 112,148.001 92,148.001
-        92,156.001 112,156.001 112,223.998 120,219.998 120,156.001 176,156.001 176,280 184,280 184,156.001 244,156.001 "/>
-      </svg>
-    </div>
-    <p>Hue is a Kreuzberg concept hair salon providing creative, modern hair design and showcasing contemporary artwork, handcrafted jewellery and clothing.</p>
-    <div class="long-logo__wrapper">
-      <div class="long-logo__image" style="right: 50%; transform: translatex(168px);">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 width="1008px" height="336px" viewBox="0 0 1008 336" enable-background="new 0 0 1008 336" xml:space="preserve">
-        <path d="M784,156.001v67.997l8-4v-63.997h56V280h8V156.001h60v-8h-60v-28l-8,4v24h-56V56h-8v92.001L696.215,148v-11.181h22.437
-        	v-7.685h-30.53V148H675.95v-18.866h-8.09V148h-16.046v-18.866h-8.023V148h-12.237v-18.866h-8.094V148h-15.366v-18.866H600V148H0v8
-        	h600v20.732h8.094V156h15.366v20.732h8.094V156h12.237v2.578c0,6.619,1.496,11.436,4.488,14.45
-        	c2.992,3.016,6.844,4.521,11.559,4.521c4.761,0,8.636-1.529,11.628-4.59s4.484-7.854,4.484-14.381V156h12.171v20.732h31.96v-7.684
-        	h-23.866V156 M667.86,158.578c0,7.525-2.676,11.288-8.022,11.288c-2.539,0-4.512-0.85-5.918-2.549
-        	c-1.406-1.701-2.105-4.613-2.105-8.738V156h16.046V158.578z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="long-logo__wrapper">
-      <div class="long-logo__image" style="left: 50%; transform: translatex(-168px);">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 width="1008px" height="336px" viewBox="0 0 1008 336" enable-background="new 0 0 1008 336" xml:space="preserve">
-        <path d="M184,148.001v-28l-8,4v24h-56V56h-8v92.001H92v8h20v67.997l8-4v-63.997h56V280h8V156.001L247.919,156v20.732h8.094V156
-        	h15.366v20.732h8.094V156h12.237v2.578c0,6.619,1.496,11.436,4.488,14.449c2.993,3.016,6.844,4.521,11.559,4.521
-        	c4.761,0,8.635-1.531,11.627-4.591s4.484-7.854,4.484-14.381V156h12.172v20.732H368v-7.685h-23.867V156H1008v-8H344.133v-11.182
-        	h22.438v-7.685h-30.53V148h-12.172v-18.867h-8.09V148h-16.045v-18.866h-8.023V148h-12.237v-18.867h-8.094V148h-15.366v-18.867
-        	h-8.094V148 M315.778,158.577c0,7.526-2.675,11.288-8.022,11.288c-2.539,0-4.512-0.85-5.918-2.549
-        	c-1.406-1.701-2.105-4.613-2.105-8.738V156h16.045V158.577z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="cards__wrapper">
-      <img class="cards__image" src="img/cards-1.jpg" />
-      <img class="cards__image" src="img/cards-2.jpg" />
-      <img class="cards__image" src="img/cards-3.jpg" />
-    </div>
+    <div class="tile" style="background-image: url('A.jpg');"></div>
+    <div class="tile" style="background-image: url('B.jpg');"></div>
+    <div class="tile" style="background-image: url('C.jpg');"></div>
+    <div class="tile" style="background-image: url('F-card-1.jpg');"></div>
+    <div class="tile" style="background-image: url('D.jpg');"></div>
+    <div class="tile" style="background-image: url('E.jpg');"></div>
+    <div class="tile" style="background-image: url('F-card-2.jpg');"></div>
+    <div class="tile" style="background-image: url('G.jpg');"></div>
+    <div class="tile" style="background-image: url('F-card-3.jpg');"></div>
+    <div class="tile" style="background-image: url('H.jpg');"></div>
   </body>
 </html>
