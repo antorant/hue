@@ -1,40 +1,57 @@
-<html>
-  <head>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hue — Antony Jan Orant</title>
+  <meta name="description" content="Antony Jan Orant">
 
-:root {
-  --unit: calc(100vw / 11);
-}
+  <meta name="viewport" content="width=device-width">
 
-body {
-  /* margin: var(--unit); */
-}
-
-.tile {
-  float: left;
-  width: calc(var(--unit) * 4);
-  height: calc(var(--unit) * 4);
-  margin: 0 0 var(--unit) var(--unit);
-  background-size: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  .tile {
-    height: 100vw;
-    margin: 0;
-    width: 100vw;
-  }
-}
-
-</style>
-  </head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
   <body>
 
-    <div class="tile" style="background-image: url('B.jpg');"></div>
+    <div class="slide" style="background-color: var(--c-dark-green);">
+      <img src="img/blurb.png" style="height: 100%; width: auto;" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-black); background-image: url('img/bg-smoke-01.jpg');">
+      <img src="img/logotype__extension--white.png" style="height: 224px; position: absolute; left: 0; width: 50%;" />
+      <img src="img/logotype__left--white.png" style="height: 224px; width: 368px;" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-white);">
+      <img src="img/card-purple.jpg" width="720" height="720" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-black); background-image: url('img/bg-sky.jpg'); background-position: bottom right; background-size: cover;">
+      <img src="img/logotype__extension--dark-mauve.png" style="height: 224px; position: absolute; right: 0; width: 50%;" />
+      <img src="img/logotype__right--dark-mauve.png" style="height: 224px; width: 368px;" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-white);">
+      <img src="img/card-pink.jpg" width="720" height="720" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-mid-green);">
+      <img src="img/wordmark-horizontal.png" style="height: auto; width: 100%;" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-white);">
+      <img src="img/card-green.jpg" width="720" height="720" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-white);">
+      <img src="img/tote.jpg" width="360" height="360" />
+      <img src="img/hours.jpg" width="360" height="360" />
+    </div>
+
+    <div class="slide" style="background-color: var(--c-black);">
+      <img src="img/board.jpg" width="720" height="720" style="position: absolute; right: 0;"/>
+    </div>
+
+    <!-- <div class="tile" style="background-image: url('B.jpg');"></div>
     <div class="tile" style="background-image: url('C.jpg');"></div>
     <div class="tile" style="background-image: url('J-purple.jpg');"></div>
     <div class="tile" style="background-image: url('D.jpg');"></div>
@@ -44,6 +61,6 @@ body {
     <div class="tile" style="background-image: url('H.jpg');"></div>
     <div class="tile" style="background-image: url('G.jpg');"></div>
     <div class="tile" style="background-image: url('J-pink.jpg');"></div>
-    <div class="tile" style="background-image: url('A.jpg');"></div>
+    <div class="tile" style="background-image: url('A.jpg');"></div> -->
   </body>
 </html>

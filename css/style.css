@@ -1,0 +1,45 @@
+/* Variables */
+:root {
+  /* --c-red: #FE573B;
+  --c-yellow: #FAE423;
+  --c-blue: #5F8BFF;
+
+  --c-black: #262626;
+  --c-dark-grey: #404040;
+  --c-mid-grey: #E3E4E6;
+  --c-light-grey: #FAFAFA;
+  --c-white: #ffffff; */
+
+  --c-black: #000000;
+  --c-white: #ffffff;
+
+  --c-mid-green: #262E2B;
+  --c-dark-green: #111413;
+
+  --grid-unit: 1rem; /* 16px */
+
+  --col: calc(100vw / 12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.slide {
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+}
